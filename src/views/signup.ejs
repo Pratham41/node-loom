@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="../public/style.css">
+  <style>
+    body{
+        font-family: Arial, sans-serif;
+        text-align: left;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    form {
+    margin-top: 20px;
+    }
+  
+    label {
+    display: block;
+    margin-bottom: 5px;
+    }
+    button{
+        padding: 4px;
+        background-color: green;
+        border: none;
+        outline: none;
+        color: white;
+        cursor: pointer;
+    }
+    .bt{
+       margin-top: 10px;
+    }
+    a{
+        margin-left: 10px;
+    }
+
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif;">
+  <h1>Sign Up</h1>
+  <form style="margin-top: 20px;" action="http://localhost:5000/api/v1/register" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <br>
+    <div class="bt">
+        <button type="submit">Sign Up</button>
+    <a href="/api/v1/login">Sign In</a>
+    </div>
+  </form>
+</body>
+</html>
